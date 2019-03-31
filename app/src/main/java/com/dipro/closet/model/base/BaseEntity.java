@@ -1,0 +1,12 @@
+package com.dipro.closet.model.base;
+
+import java.io.Serializable;
+
+/**
+ * Created by Ethan on 2017/9/19.
+ */
+
+public class BaseEntity implements Serializable {
+
+
+}

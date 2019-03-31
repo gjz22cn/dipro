@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sugarya.closet.ui.home.fragment.DressingRoomFragment"
+    tools:context="com.dipro.closet.ui.home.fragment.DressingRoomFragment"
     >
 
     <android.support.v4.view.ViewPager
@@ -38,7 +38,7 @@
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
-    <com.sugarya.closet.ui.widgets.filterbar.FilterBarLayout
+    <com.dipro.closet.ui.widgets.filterbar.FilterBarLayout
         android:id="@+id/filter_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -169,6 +169,6 @@
 
         </LinearLayout>
 
-    </com.sugarya.closet.ui.widgets.filterbar.FilterBarLayout>
+    </com.dipro.closet.ui.widgets.filterbar.FilterBarLayout>
 
 </RelativeLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context="com.sugarya.closet.ui.home.fragment.ClosetFragment"
+    tools:context="com.dipro.closet.ui.home.fragment.ClosetFragment"
     >
 
     <ScrollView

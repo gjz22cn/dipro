@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sugarya.closet.ui.home.fragment.HomeFragment"
+    tools:context="com.dipro.closet.ui.home.fragment.HomeFragment"
     >
 
     <android.support.design.widget.AppBarLayout

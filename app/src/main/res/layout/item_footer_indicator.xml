@@ -8,7 +8,7 @@
     android:background="@android:color/transparent"
     >
 
-    <com.sugarya.closet.ui.widgets.enhancerecycler.indicator.LoadingIndicatorView
+    <com.dipro.closet.ui.widgets.enhancerecycler.indicator.LoadingIndicatorView
         android:id="@+id/item_footer_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
