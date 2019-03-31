@@ -49,8 +49,10 @@ public class HomeFragment extends BasicToolbarFragment {
 
     private static final int REQUEST_CODE_CHOOSE = 23;
 
+    /*
     @BindView(R.id.tab_home)
     TabLayout mTabLayout;
+    */
 
     @BindView(R.id.pager_home)
     ViewPager mViewPager;
@@ -234,7 +236,7 @@ public class HomeFragment extends BasicToolbarFragment {
 
         HomePagerAdapter pagerAdapter = new HomePagerAdapter(getChildFragmentManager(), mFragmentList, mTitleList);
         mViewPager.setAdapter(pagerAdapter);
-        mTabLayout.setupWithViewPager(mViewPager);
+        //mTabLayout.setupWithViewPager(mViewPager);
         mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
