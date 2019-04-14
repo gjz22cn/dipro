@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dress_arr">
+        <item>T恤衫</item>
+        <item>上衣</item>
+        <item>大衣</item>
+        <item>连衣裙</item>
+        <item>裤子</item>
+        <item>短裤</item>
+        <item>鞋子</item>
+    </string-array>
+</resources>

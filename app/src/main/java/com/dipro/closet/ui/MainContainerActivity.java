@@ -12,7 +12,7 @@ import android.widget.RelativeLayout;
 import com.dipro.closet.R;
 import com.dipro.closet.ui.common.basic.BasicActivity;
 import com.dipro.closet.ui.common.basic.BasicFragment;
-import com.dipro.closet.ui.home.fragment.ClosetFragment;
+import com.dipro.closet.ui.dapei.DapeiFragment;
 import com.dipro.closet.ui.home.fragment.HomeFragment;
 import com.dipro.closet.ui.mine.MineFragment;
 import com.dipro.closet.ui.square.SquareFragment;
@@ -70,6 +70,9 @@ public class MainContainerActivity extends BasicActivity {
                     case R.id.navigation_home:
                         showOneFragment(HomeFragment.class.getSimpleName(), true, LaunchMode.EXCHANGE, false);
                         return true;
+                    case R.id.navigation_dapei:
+                        showOneFragment(DapeiFragment.class.getSimpleName(), true, LaunchMode.EXCHANGE, false);
+                        return true;
                     case R.id.navigation_square:
                         showOneFragment(SquareFragment.class.getSimpleName(), true, LaunchMode.EXCHANGE, false);
                         return true;
@@ -87,6 +90,8 @@ public class MainContainerActivity extends BasicActivity {
         BasicFragment fragment;
         if(HomeFragment.class.getSimpleName().equals(fragmentTab)){
             fragment = HomeFragment.newInstance(arguments);
+        }else if(DapeiFragment.class.getSimpleName().equals(fragmentTab)){
+            fragment = DapeiFragment.newInstance(arguments);
         }else if(SquareFragment.class.getSimpleName().equals(fragmentTab)){
             fragment = SquareFragment.newInstance(arguments);
         }else if(MineFragment.class.getSimpleName().equals(fragmentTab)){
@@ -108,10 +113,11 @@ public class MainContainerActivity extends BasicActivity {
      */
     public void enterBottomBar() {
         String tab1 = HomeFragment.class.getSimpleName();
-        String tab2 = SquareFragment.class.getSimpleName();
-        String tab3 = MineFragment.class.getSimpleName();
+        String tab2 = DapeiFragment.class.getSimpleName();
+        String tab3 = SquareFragment.class.getSimpleName();
+        String tab4 = MineFragment.class.getSimpleName();
         String currentTab = getCurrentFragment() != null ? getCurrentFragment().getClass().getSimpleName() : "";
-        if (tab1.equals(currentTab) || tab2.equals(currentTab) || tab3.equals(currentTab)) {
+        if (tab1.equals(currentTab) || tab2.equals(currentTab) || tab3.equals(currentTab) || tab4.equals(currentTab)) {
             if (mBnvNavigation != null) {
                 mBnvNavigation.post(new Runnable() {
                     @Override
